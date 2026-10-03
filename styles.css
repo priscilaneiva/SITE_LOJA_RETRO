@@ -1,0 +1,113 @@
+body {
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;   /* Empilha o Header, Main e Footer um embaixo do outro */
+    justify-content: center;  /* Centraliza na vertical (agora que mudamos a direção) */
+    align-items: center;      /* Centraliza na horizontal */
+    
+    min-height: 100vh;        /* O SEGREDO: Força o body a ocupar 100% da altura da tela visível */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    justify-content: center;  /* Centraliza na horizontal */
+    align-items: center;      /* Centraliza na vertical */
+    gap: 20px;                /* Dá um espaço de 20px entre os elementos do topo */
+    width: 100%;              /* Garante que o header ocupe toda a largura */
+    padding: 15px 0;   
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.gallery h2 {
+    width: 100%;           /* Ocupa toda a largura interna do container */
+    height: auto;          /* Mantém a proporção para não amassar a foto */
+    display: block;  
+}
+
+.product {
+     max-width: 300px;  /* Define o tamanho máximo que o seu card deve ter */
+    margin: 0 auto;    /* O segredo: "auto" nas laterais centraliza o bloco na horizontal */
+    
+    /* Opcional: Estilo de card */
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    flex-direction: column;   /* Empilha a imagem e os textos */
+    align-items: center;      /* Centraliza os blocos (como a imagem) horizontalmente */
+    
+    text-align: center;       /* 
+}
+
+.product img {
+      display: block;           /* Remove comportamentos estranhos de espaçamento da imagem */
+    margin: 0 auto;           /* Garante uma segunda camada de centralização por segurança */
+    
+    /* Controle de tamanho (ajuste como preferir) */
+    width: 100%;              /* Ocupa a largura total permitida */
+    max-width: 250px;         /* Limita o tamanho para a imagem não ficar gigante */
+    aspect-ratio: 1 / 1;      /* Mantém o formato quadrado perfeito que você escolheu */
+    object-fit: cover;        /* Não deixa a imagem distorcer */
+}
+
+.product h3, .product p {
+    margin: 8px 0;            /* Dá um pequeno espaço em cima e embaixo de cada texto */
+    width: 100%;              /* Garante que o texto use todo o espaço para se alinhar corretamente */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+#img-rock{
+    
+   width: 25%;             /* Ocupa toda a largura do card do produto */
+    aspect-ratio: 1 / 1;     /* Força a imagem a ser sempre um quadrado perfeito */
+    object-fit: cover;       /* Corta as sobras da imagem sem distorcer ou esticar */
+    border-radius: 8px;      /* Opcional: deixa os cantos arredondados */
+    display: block;
+}
+
+#img-pop-rock{
+    
+   width: 25%;             /* Ocupa toda a largura do card do produto */
+    aspect-ratio: 1 / 1;     /* Força a imagem a ser sempre um quadrado perfeito */
+    object-fit: cover;       /* Corta as sobras da imagem sem distorcer ou esticar */
+    border-radius: 8px;      /* Opcional: deixa os cantos arredondados */
+    display: block;
+}
